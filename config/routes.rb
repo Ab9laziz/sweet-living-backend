@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :sellers, only: [:index, :create, :show, :update]
-  resources :properties, only: [:index, :create, :destroy]
-  resources :buyers, only: [:index, :create, :update]
+  resources :properties
+  resources :buyers, only: [:index, :show, :create, :update]
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

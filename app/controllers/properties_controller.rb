@@ -16,13 +16,13 @@ class PropertiesController < ApplicationController
 
     def update 
         property = Property.find(params[:id])
-        property.update!(property_params)
+        property.update(property_params)
         render json: property
     end
 
     private 
     def find_property
-        Buyer.find_by!(id: params[:id])
+        Property.find_by(id: params[:id])
     end
     
     def property_params

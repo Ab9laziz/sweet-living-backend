@@ -3,6 +3,11 @@ class BuyersController < ApplicationController
         render json: Buyer.all
     end
 
+    def show 
+        buyer = find_buyer
+        render json: buyer
+    end
+
     def create
         buyer = Buyer.create!(buyer_params)
         render json: buyer
