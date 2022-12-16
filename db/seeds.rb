@@ -1,16 +1,16 @@
 puts "🌱 Seeding sweet living data..."
 
-puts "Creating buyers..."
+puts "🔑 Creating buyers..."
 b1 = Buyer.create(username: Faker::Name.name, email: Faker::Name.first_name + "@gmail.com")
 b2 = Buyer.create(username: Faker::Name.name, email: Faker::Name.first_name + "@gmail.com")
 b3 = Buyer.create(username: Faker::Name.name, email: Faker::Name.first_name + "@gmail.com")
 b4 = Buyer.create(username: Faker::Name.name, email: Faker::Name.first_name + "@gmail.com")
 b5 = Buyer.create(username: Faker::Name.name, email: Faker::Name.first_name + "@gmail.com")
 
-puts "Buyers created successfully"
+puts "🔑 Buyers created successfully"
 
 #create data for table Seller
-puts "creating sellers..."
+puts "👨‍💼 creating sellers..."
 s1 = Seller.create(username: Faker::Name.name, email: Faker::Name.first_name+ "@gmail.com", phone_number: Faker::PhoneNumber.phone_number)
 s2 = Seller.create(username: Faker::Name.name, email: Faker::Name.first_name+ "@gmail.com", phone_number: Faker::PhoneNumber.phone_number)
 s3 = Seller.create(username: Faker::Name.name, email: Faker::Name.first_name+ "@gmail.com", phone_number: Faker::PhoneNumber.phone_number)
@@ -19,7 +19,7 @@ s5 = Seller.create(username: Faker::Name.name, email: Faker::Name.first_name+ "@
 s6 = Seller.create(username: Faker::Name.name, email: Faker::Name.first_name+ "@gmail.com", phone_number: Faker::PhoneNumber.phone_number)
 s7 = Seller.create(username: Faker::Name.name, email: Faker::Name.first_name+ "@gmail.com", phone_number: Faker::PhoneNumber.phone_number)
 
-puts "Seller created successfully"
+puts "👨‍💼 Seller created successfully"
 
 #create data for table Property
 puts "🏣 Creating properties..."
