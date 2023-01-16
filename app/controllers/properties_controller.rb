@@ -33,7 +33,7 @@ class PropertiesController < ApplicationController
     end
     
     def property_params
-        params.permit(:houses, :image_url, :location, :number_of_rooms, :seller_id, :buyer_id)
+        params.permit(:houses, :image_url, :location, :number_of_rooms, :seller_id, :buyer_id, :description)
     end
 
     def property_not_found_response
