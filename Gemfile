@@ -20,6 +20,8 @@ gem "rack-cors"
 
 gem "bcrypt"
 
+gem 'active_model_serializers'
+
 #faker gem
 gem 'faker'
 
