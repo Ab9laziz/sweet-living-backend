@@ -1,4 +1,4 @@
-# SWEET-LIVING FRONTEND WEB APP
+# SWEET-LIVING BACKEND WEB APP
 
 # Table of contents
 1. [Description](#description)
