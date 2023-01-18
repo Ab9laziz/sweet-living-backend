@@ -31,6 +31,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_18_103645) do
     t.integer "price"
     t.string "category"
     t.string "description"
+    t.string "image_url2"
+    t.string "image_url3"
+    t.string "image_url4"
+    t.string "image_url5"
   end
 
   create_table "sellers", force: :cascade do |t|
