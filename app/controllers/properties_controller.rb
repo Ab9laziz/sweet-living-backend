@@ -5,6 +5,11 @@ class PropertiesController < ApplicationController
         render json: Property.all
     end
 
+    def create
+        property = Property.create(property_params)
+        render json: property, status: :created 
+    end
+
     def show
         property = find_property
         if property
@@ -33,7 +38,7 @@ class PropertiesController < ApplicationController
     end
     
     def property_params
-        params.permit(:houses, :image_url, :location, :number_of_rooms, :seller_id, :buyer_id, :description)
+        params.permit(:id, :houses, :image_url, :image_url2, :image_url3, :image_url4, :image_url5, :location, :number_of_rooms, :price, :category, :description, :seller_id)
     end
 
     def property_not_found_response
