@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_19_233740) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_20_070444) do
   create_table "buyers", force: :cascade do |t|
     t.string "username"
     t.string "email"
@@ -42,7 +42,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_19_233740) do
     t.string "username"
     t.string "email"
     t.integer "password"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -50,7 +50,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_19_233740) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
