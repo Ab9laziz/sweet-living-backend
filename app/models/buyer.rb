@@ -3,6 +3,6 @@ class Buyer < ApplicationRecord
     has_many :properties, dependent: :destroy
     has_many :sellers, through: :properties
     
-
+    # has_secure_password
     
 end

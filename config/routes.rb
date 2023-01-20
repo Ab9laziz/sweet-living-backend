@@ -3,13 +3,19 @@ Rails.application.routes.draw do
   resources :properties
   resources :buyers, only: [:index, :show, :create, :update]
 
-  get '/me', to: 'user#show'
+  get '/me', to: 'buyer#show'
 
-  post '/signup', to: 'user#create'
+  get '/me', to: 'seller#show'
 
+  post '/signup', to: 'buyer#create'
+  
+  post '/sellersignup', to: 'seller#create'
+  
   post '/login', to: 'session#create'
 
   delete '/logout', to: 'session#destroy'
+
+
   
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
